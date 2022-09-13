@@ -74,6 +74,11 @@ export const Main = styled.div`
 			width: 1.25rem;
 		}
 	}
+
+	@media (max-width: 768px) {
+		margin-top: 5rem;
+		padding: 2em 0;
+	}
 `;
 
 export const Title = styled.span`
