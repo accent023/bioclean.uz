@@ -86,13 +86,9 @@ export const Main = styled.div`
 `;
 
 export const Title = styled.span`
-	font-size: clamp(5rem, 12.5vw, 12.5rem);
+	font-size: clamp(3.25rem, 16.5vw, 12.5rem);
 	text-transform: uppercase;
 	text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.15);
-
-	@media (max-width: 768px) {
-		font-size: 7rem;
-	}
 `;
 
 export const Subtitle = styled.span`

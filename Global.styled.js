@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 		font-size: 2rem;
 		font-family: "Open Sans", "Helvetica", sans-serif;
 		color: #555;
+		-webkit-tap-highlight-color: transparent;
 
 		@media (max-width: 768px) {
 			font-size: 1.6rem;
