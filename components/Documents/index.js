@@ -15,8 +15,8 @@ const Documents = () => {
 					/>
 
 					<ListOfDocuments>
-						<Document imageURL="/images/license.jpg" />
-						<Document imageURL="/images/certificate.jpg" />
+						<Document imageURL="/images/license.png" />
+						<Document imageURL="/images/certificate.png" />
 					</ListOfDocuments>
 				</Content>
 			</Container>

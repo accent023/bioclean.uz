@@ -1,8 +1,18 @@
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-	display: flex;
-	gap: 1.5em;
+	position: relative;
+
+	.hamburger-react {
+		display: none;
+		color: #333;
+	}
+
+	ul {
+		display: flex;
+		gap: 1.5em;
+		list-style: none;
+	}
 
 	a {
 		font-size: 1.65rem;
@@ -35,6 +45,41 @@ const StyledNav = styled.nav`
 			opacity: 0;
 			transform: scaleX(0);
 			transform-origin: left;
+		}
+	}
+
+	// RWD
+	@media (max-width: 992px) {
+		.hamburger-react {
+			display: block;
+			position: fixed;
+			top: 0;
+			z-index: 3;
+		}
+
+		ul {
+			flex-direction: column;
+			width: 100%;
+			max-width: 45rem;
+			height: auto;
+			position: fixed;
+			top: 0;
+			left: -100%;
+			background: rgba(255, 255, 255, 255.95);
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+			transition: 500ms ease-in-out;
+
+			&.mobile {
+				left: 0;
+			}
+		}
+
+		a {
+			font-size: 2rem;
+			color: #333;
 		}
 	}
 `;

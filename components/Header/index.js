@@ -1,8 +1,9 @@
-import StyledHeader, { Content, Logo, Phone } from "./Header.styled";
+import StyledHeader, { Content, Logo } from "./Header.styled";
 import Container from "../Container";
 import Nav from "../Nav";
 import Image from "next/image";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import Hamburger from "hamburger-react";
 
 const Header = () => {
 	return (
@@ -10,11 +11,6 @@ const Header = () => {
 			<Container>
 				<Content>
 					<Nav />
-
-					<Phone href="tel:+998987074922">
-						<BsFillTelephoneForwardFill />
-						+998(98)707-49-22
-					</Phone>
 
 					<Logo>
 						<Image

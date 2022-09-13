@@ -10,6 +10,13 @@ const StyledHeader = styled.header`
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	animation: ${FadeIn} 1s 2s forwards;
+
+	// RWD
+	@media (max-width: 992px) {
+		position: fixed;
+		background: rgba(255, 255, 255, 255.95);
+		border-bottom: 1px solid #eee;
+	}
 `;
 
 export const Content = styled.div`
@@ -22,23 +29,6 @@ export const Content = styled.div`
 
 export const Logo = styled.div`
 	width: 17.5rem;
-`;
-
-export const Phone = styled.a`
-	text-decoration: none;
-	font-size: 1.8rem;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-	padding: 0.5em 0.85em;
-	border-radius: 5px;
-
-	svg {
-		font-size: 1.75rem;
-		fill: ${({ theme }) => theme.colors.accent};
-		color: ${({ theme }) => theme.colors.accent};
-	}
 `;
 
 export default StyledHeader;

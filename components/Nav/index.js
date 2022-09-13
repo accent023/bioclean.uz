@@ -1,15 +1,47 @@
 import StyledNav from "./Nav.styled";
 import Link from "next/link";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 
 const Nav = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
 	return (
 		<StyledNav>
-			<Link href="/">Главная</Link>
-			<Link href="/">О нас</Link>
-			<Link href="/">Услуги</Link>
-			<Link href="/">Вредители</Link>
-			<Link href="/">Преимущества</Link>
-			<Link href="/">Контакты</Link>
+			<Hamburger toggled={isMobile} toggle={setIsMobile} />
+
+			<ul className={isMobile ? "mobile" : " "}>
+				<li>
+					<Link href="/">
+						<a>Главная</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>О нас</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>Услуги</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>Вредители</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>Преимущества</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>Контакты</a>
+					</Link>
+				</li>
+			</ul>
 		</StyledNav>
 	);
 };
