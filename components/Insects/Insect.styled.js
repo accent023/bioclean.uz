@@ -43,6 +43,12 @@ const StyledInsect = styled.li`
 			transform: translate(-50%, -0.35rem);
 		}
 	}
+
+	@media (max-width: 768px) {
+		p {
+			font-size: inherit;
+		}
+	}
 `;
 
 export const ImageWrapper = styled.div`
@@ -132,6 +138,11 @@ export const ImageWrapper = styled.div`
 		&--ant {
 			transform: rotate(35deg);
 		}
+	}
+
+	// RWD
+	@media (max-width: 768px) {
+		margin-inline: auto;
 	}
 `;
 

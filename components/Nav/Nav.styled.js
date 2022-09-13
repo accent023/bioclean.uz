@@ -70,7 +70,7 @@ const StyledNav = styled.nav`
 			align-items: center;
 			justify-content: center;
 			box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
-			transition: 500ms ease-in-out;
+			transition: 500ms ease;
 
 			&.mobile {
 				left: 0;

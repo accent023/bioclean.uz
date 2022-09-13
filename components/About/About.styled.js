@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-const StyledAbout = styled.section``;
+const StyledAbout = styled.section`
+	overflow-x: hidden;
+
+	@media (max-width: 768px) {
+		background: #fafafa;
+	}
+`;
 
 export const Content = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5em 0;
@@ -21,16 +28,20 @@ export const Content = styled.div`
 			background: ${({ theme }) => theme.colors.accent};
 		}
 	}
+
+	@media (max-width: 768px) {
+		padding: 3.5em 0;
+	}
 `;
 
 export const Main = styled.div`
-	max-width: 54%;
+	width: 54%;
 	position: relative;
 
 	h2 {
 		font-family: "Open Sans", sans-serif;
 		color: #1c1c1c;
-		font-size: 4.75rem;
+		font-size: clamp(3.25rem, 3.5vw, 4.75rem);
 		line-height: 1.15;
 		margin-bottom: 1em;
 	}
@@ -52,30 +63,51 @@ export const Main = styled.div`
 			transform: translateY(3px);
 		}
 	}
+
+	// RWD
+	@media (max-width: 992px) {
+		width: 100%;
+		margin-bottom: 5.5em;
+
+		h2 {
+			max-width: 30ch;
+		}
+	}
 `;
 
 export const Highlights = styled.ul`
-	padding-left: 5rem;
+	padding-left: 3.25rem;
 	margin-bottom: 2.25em;
 
 	li {
 		display: flex;
 		gap: 0.5em;
-		align-items: center;
-		margin-bottom: 0.5em;
 		font-weight: 600;
 		color: #333;
+		margin-bottom: 0.25em;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
 
 		svg {
-			font-size: 3rem;
+			width: 5%;
+			font-size: 2.5rem;
 			transform: translateY(3px);
 			color: ${({ theme }) => theme.colors.accent};
 			fill: ${({ theme }) => theme.colors.accent};
 		}
+
+		p {
+			width: 95%;
+			margin: 0;
+			font-size: clamp(1.65rem, 2vw, 2rem);
+		}
+	}
+
+	// RWD
+	@media (max-width: 992px) {
+		padding-left: 0;
 	}
 `;
 
@@ -109,6 +141,21 @@ export const ImagePart = styled.div`
 			bottom: -7.5rem;
 		}
 	}
+
+	// RWD
+	@media (max-width: 992px) {
+		width: 75%;
+		max-width: 45rem;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 576px) {
+		width: 85%;
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 3.5em;
+	}
 `;
 
 export const ImageWrapper = styled.div`
@@ -139,6 +186,20 @@ export const Experience = styled.div`
 	p {
 		font-size: 3rem;
 		margin-left: 1.15rem;
+	}
+
+	// RWD
+	@media (max-width: 576px) {
+		padding: 1em 1.25em;
+		left: 5rem;
+
+		h3 {
+			font-size: 6.5rem;
+		}
+
+		p {
+			font-size: 2.5rem;
+		}
 	}
 `;
 

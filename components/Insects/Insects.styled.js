@@ -25,6 +25,16 @@ export const Content = styled.div`
 	h2 {
 		margin-bottom: 1em;
 	}
+
+	@media (max-width: 768px) {
+		padding: 3.5em 0;
+	}
+
+	@media (max-width: 576px) {
+		h2 {
+			margin-bottom: 0;
+		}
+	}
 `;
 
 export const ListOfInsects = styled.ul`
@@ -57,6 +67,7 @@ export const ListOfInsects = styled.ul`
 				left: 5rem;
 				background: url("/images/mosquitos-decor.png") center / contain
 					no-repeat;
+				pointer-events: none;
 			}
 		}
 
@@ -67,6 +78,52 @@ export const ListOfInsects = styled.ul`
 				top: -5rem;
 				left: 9rem;
 				background: url("/images/ants-running.png") right / 34rem repeat-x;
+			}
+		}
+	}
+
+	// RWD
+	@media (max-width: 992px) {
+		li {
+			width: 45%;
+
+			&:nth-child(3) {
+				&::after {
+					width: 30rem;
+					min-height: 30rem;
+					top: -50%;
+					left: 5rem;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		li {
+			width: 100%;
+			margin: 4em auto;
+			text-align: center;
+
+			&:nth-child(3) {
+				&::after {
+					width: 30rem;
+					min-height: 30rem;
+					top: -50%;
+					left: unset;
+					right: 0;
+				}
+			}
+
+			&:nth-child(6) {
+				&::after {
+					left: clamp(15rem, 55vw, 36rem);
+				}
+			}
+
+			a {
+				top: 105%;
+				left: 50%;
+				transform: translateX(-50%);
 			}
 		}
 	}

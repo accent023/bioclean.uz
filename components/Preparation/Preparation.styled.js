@@ -8,6 +8,10 @@ export const Content = styled.div`
 	h2 {
 		margin-bottom: 2em;
 	}
+
+	@media (max-width: 768px) {
+		padding: 3.5em 0;
+	}
 `;
 
 export const List = styled.ul`
@@ -15,6 +19,7 @@ export const List = styled.ul`
 
 	li {
 		display: flex;
+		gap: 0.3em;
 		line-height: 1.45;
 		margin-bottom: 0.75em;
 		padding-bottom: 0.75em;
@@ -27,13 +32,28 @@ export const List = styled.ul`
 
 		svg {
 			font-size: 2.5rem;
-			width: 3%;
+			width: 5%;
 		}
 
 		p {
-			width: 97%;
+			width: 95%;
 			font-size: 1.75rem;
 			color: #777;
+		}
+	}
+
+	@media (max-width: 768px) {
+		li {
+			display: block;
+			text-align: center;
+
+			p {
+				width: 100%;
+			}
+
+			svg {
+				width: 100%;
+			}
 		}
 	}
 `;

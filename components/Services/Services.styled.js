@@ -61,6 +61,55 @@ const StyledServices = styled.section`
 			background: ${({ theme }) => theme.colors.accent};
 		}
 	}
+
+	// RWD
+	@media (max-width: 1350px) {
+		&:hover {
+			&::before {
+				right: -30rem;
+			}
+		}
+
+		&::before {
+			right: -30rem;
+		}
+
+		.dots {
+			display: none;
+		}
+	}
+
+	@media (max-width: 992px) {
+		background: none;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: clamp(20rem, 75vw, 60rem);
+		background: linear-gradient(
+			to bottom,
+			#fff 80%,
+			${({ theme }) => theme.colors.accent} 30%
+		);
+
+		&:hover {
+			&::before {
+				right: 0;
+			}
+		}
+
+		&::before {
+			display: block;
+			width: 100%;
+			min-width: 35rem;
+			right: 0;
+			transition: none;
+		}
+	}
 `;
 
 export const Content = styled.div`
@@ -71,7 +120,7 @@ export const Content = styled.div`
 	}
 `;
 
-export const ListOfServices = styled.div`
+export const ListOfServices = styled.ul`
 	width: 70%;
 	list-style: none;
 	display: flex;
@@ -82,6 +131,26 @@ export const ListOfServices = styled.div`
 		margin: 1.25em 0;
 		width: 47%;
 	}
+
+	// RWD
+
+	@media (max-width: 992px) {
+		width: 90%;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		display: block;
+		text-align: center;
+
+		li {
+			width: 100%;
+
+			[role="button"] {
+				margin-inline: auto;
+			}
+		}
+	}
 `;
 
 export const RombDecoration = styled.img`
@@ -91,6 +160,19 @@ export const RombDecoration = styled.img`
 	z-index: 1;
 	width: 62.5rem;
 	mix-blend-mode: luminosity;
+
+	// RWD
+	@media (max-width: 1350px) {
+		right: -22rem;
+	}
+
+	@media (max-width: 1200px) {
+		right: -30rem;
+	}
+
+	@media (max-width: 992px) {
+		display: none;
+	}
 `;
 
 export default StyledServices;

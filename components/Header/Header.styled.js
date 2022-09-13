@@ -20,11 +20,15 @@ const StyledHeader = styled.header`
 `;
 
 export const Content = styled.div`
-	padding: 1.25rem;
+	padding: 1.25rem 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	color: ${({ theme }) => theme.colors.white};
+
+	@media (max-width: 992px) {
+		padding: 0.3rem 0;
+	}
 `;
 
 export const Logo = styled.div`

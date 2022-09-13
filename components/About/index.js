@@ -40,7 +40,7 @@ const About = ({ highlights }) => {
 							{highlights.map((highlight, index) => (
 								<li key={`highlight-${index}`}>
 									<GiCheckMark />
-									{highlight}
+									<p>{highlight}</p>
 								</li>
 							))}
 						</Highlights>

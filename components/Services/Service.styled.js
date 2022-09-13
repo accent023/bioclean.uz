@@ -5,12 +5,12 @@ const StyledService = styled.li`
 	flex-direction: column;
 
 	h3 {
-		font-size: 2.75rem;
+		font-size: clamp(2.5rem, 5vw, 2.75rem);
 		margin-bottom: 0.5em;
 		color: ${({ theme }) => theme.colors.accent};
 	}
 
-	button {
+	[role="button"] {
 		display: flex;
 		align-items: center;
 		box-shadow: unset;

@@ -9,7 +9,7 @@ export const StyledAntsTitle = styled.h2`
 	}
 
 	.title {
-		font-size: 5.75rem;
+		font-size: clamp(3.9rem, 5vw, 5.75rem);
 		position: relative;
 		display: inline-block;
 		padding-bottom: 0.5em;
@@ -28,10 +28,18 @@ export const StyledAntsTitle = styled.h2`
 	}
 
 	.subtitle {
-		font-size: 2.5rem;
+		font-size: clamp(1.6rem, 3vw, 2.5rem);
 		font-family: "Open Sans", sans-serif;
 		font-weight: 600;
 		text-transform: uppercase;
+
+		@media (max-width: 992px) {
+			line-height: 1.3;
+		}
+	}
+
+	@media (max-width: 768px) {
+		text-align: center;
 	}
 `;
 

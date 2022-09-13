@@ -6,9 +6,9 @@ const Service = ({ name, description }) => {
 		<StyledService>
 			<h3>{name}</h3>
 			<p>{description}</p>
-			<button>
+			<a role="button">
 				подробнее <BsArrowRight />
-			</button>
+			</a>
 		</StyledService>
 	);
 };

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const StyledCustomers = styled.section``;
+const StyledCustomers = styled.section`
+	@media (max-width: 768px) {
+		background: #fafafa;
+	}
+`;
 
 export const Content = styled.div`
 	padding: 3em 0;
@@ -27,6 +31,14 @@ export const Content = styled.div`
 			-webkit-transform: translateZ(0);
 		}
 	}
+
+	@media (max-width: 768px) {
+		padding: 3.5em 0;
+
+		h2 {
+			margin-bottom: 3em;
+		}
+	}
 `;
 
 export const ListOfCustomers = styled.div`
@@ -40,6 +52,17 @@ export const ListOfCustomers = styled.div`
 		&-slide {
 			overflow: hidden;
 			cursor: pointer;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 1em;
+		border-bottom: 0;
+
+		.swiper {
+			&-slide {
+				padding: 3rem;
+			}
 		}
 	}
 `;
@@ -74,6 +97,10 @@ export const Controllers = styled.div`
 		svg {
 			fill ${({ theme }) => theme.colors.accent};
 		}
+	}
+
+	@media (max-width: 768px) {
+		justify-content: space-around;
 	}
 `;
 

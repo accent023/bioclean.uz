@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
 		font-size: 2rem;
 		font-family: "Open Sans", "Helvetica", sans-serif;
 		color: #555;
+
+		@media (max-width: 768px) {
+			font-size: 1.6rem;
+		}
 	}
 
 	h1,h2,h3 {
@@ -41,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
 
 	p {
 		line-height: 1.5;
+
+		@media (max-width: 768px) {
+			line-height: 1.35;
+		}
 	}
 
 	a {
@@ -56,6 +64,10 @@ const GlobalStyle = createGlobalStyle`
 		font-weight: 600;
 		color: inherit;
 		cursor: pointer;
+
+		@media (max-width: 768px) {
+			font-size: 1.75rem;
+		}
 	}
 
 	.container {

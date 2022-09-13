@@ -24,10 +24,20 @@ const StyledAdvantages = styled.section`
 			background: ${({ theme }) => theme.colors.accent};
 		}
 	}
+
+	@media (max-width: 992px) {
+		.dots {
+			display: none;
+		}
+	}
 `;
 
 export const Content = styled.div`
 	padding: 0 0 3em;
+
+	@media (max-width: 768px) {
+		padding: 3.5em 0;
+	}
 `;
 
 export const ListOfAdvantages = styled.ul`
@@ -38,6 +48,16 @@ export const ListOfAdvantages = styled.ul`
 
 	li {
 		width: 42.5%;
+	}
+
+	@media (max-width: 768px) {
+		display: block;
+
+		li {
+			margin: 2em auto;
+			width: 100%;
+			text-align: center;
+		}
 	}
 `;
 

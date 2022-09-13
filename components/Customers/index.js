@@ -42,10 +42,24 @@ const Customers = () => {
 								swiper.navigation.init();
 								swiper.navigation.update();
 							}}
+							slidesPerView={1}
+							spaceBetween={100}
 							modules={[Navigation]}
-							slidesPerView={6}
-							spaceBetween={80}
 							speed={900}
+							breakpoints={{
+								640: {
+									slidesPerView: 2,
+									spaceBetween: 30,
+								},
+								768: {
+									slidesPerView: 4,
+									spaceBetween: 40,
+								},
+								1024: {
+									slidesPerView: 5,
+									spaceBetween: 50,
+								},
+							}}
 						>
 							<SwiperSlide>
 								<Image
