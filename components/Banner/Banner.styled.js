@@ -56,7 +56,7 @@ export const Main = styled.div`
 
 	p {
 		font-size: 1.85rem;
-		width: 90%;
+		width: 100%;
 		max-width: 56ch;
 		margin-bottom: 3em;
 	}
@@ -78,6 +78,10 @@ export const Main = styled.div`
 	@media (max-width: 768px) {
 		margin-top: 5rem;
 		padding: 2em 0;
+
+		p {
+			font-size: 1.6rem;
+		}
 	}
 `;
 
