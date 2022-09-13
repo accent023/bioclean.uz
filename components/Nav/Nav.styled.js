@@ -6,6 +6,7 @@ const StyledNav = styled.nav`
 	.hamburger-react {
 		display: none;
 		color: #333;
+		user-select: none;
 	}
 
 	ul {
