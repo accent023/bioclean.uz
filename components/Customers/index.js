@@ -16,8 +16,9 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import ArrowLeft from "../Icons/ArrowLeft";
 import ArrowRight from "../Icons/ArrowRight";
+import CustomersData from "../../database/customers";
 
-const Customers = () => {
+const Customers = ({ customers }) => {
 	const customersArrowPrev = useRef(null);
 	const customersArrowNext = useRef(null);
 
@@ -61,76 +62,18 @@ const Customers = () => {
 								},
 							}}
 						>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/evos.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип evos"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/bon.jpg"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип bon"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/ecorn.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип ecorn"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/shef-burger.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип Шеф Бургер"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/blackstar.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип black star burger"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/cola.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип coca-cola"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src="/images/customers/street77.png"
-									width={175}
-									height={175}
-									objectFit="contain"
-									layout="responsive"
-									alt="логотип street 77"
-								/>
-							</SwiperSlide>
+							{CustomersData.map((customer, index) => (
+								<SwiperSlide key={`customer-${index}`}>
+									<Image
+										src={customer.logo}
+										width={175}
+										height={175}
+										objectFit="contain"
+										layout="responsive"
+										alt={customer.name}
+									/>
+								</SwiperSlide>
+							))}
 
 							<Controllers>
 								<button

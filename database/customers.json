@@ -1,0 +1,102 @@
+[
+	{
+		"id": "1",
+		"name": "IT Park",
+		"logo": "/images/customers/it-park.jpeg"
+	},
+	{
+		"id": "2",
+		"name": "Shos",
+		"logo": "/images/customers/shos.png"
+	},
+	{
+		"id": "3",
+		"name": "Uzkabel",
+		"logo": "/images/customers/uzkabel.jpg"
+	},
+	{
+		"id": "4",
+		"name": "Street 77",
+		"logo": "/images/customers/street77.png"
+	},
+	{
+		"id": "5",
+		"name": "Wok",
+		"logo": "/images/customers/wok.png"
+	},
+	{
+		"id": "6",
+		"name": "Evos",
+		"logo": "/images/customers/evos.png"
+	},
+	{
+		"id": "7",
+		"name": "bon",
+		"logo": "/images/customers/bon.jpg"
+	},
+	{
+		"id": "8",
+		"name": "Anor bank",
+		"logo": "/images/customers/anorbank.png"
+	},
+	{
+		"id": "9",
+		"name": "Ipoteka bank",
+		"logo": "/images/customers/ipoteka.png"
+	},
+	{
+		"id": "10",
+		"name": "Cheers",
+		"logo": "/images/customers/cheers.jpg"
+	},
+	{
+		"id": "11",
+		"name": "Davr bank",
+		"logo": "/images/customers/davrbank.png"
+	},
+	{
+		"id": "12",
+		"name": "Golden House",
+		"logo": "/images/customers/gh.png"
+	},
+	{
+		"id": "13",
+		"name": "Artel",
+		"logo": "/images/customers/artel.png"
+	},
+	{
+		"id": "14",
+		"name": "Gold Step Invest",
+		"logo": "/images/customers/gsi.png"
+	},
+	{
+		"id": "15",
+		"name": "Yalpiz",
+		"logo": "/images/customers/yalpiz.jpg"
+	},
+	{
+		"id": "16",
+		"name": "Toshkent Gullari",
+		"logo": "/images/customers/toshkentgullari.jpg"
+	},
+	{
+		"id": "17",
+		"name": "Hayat Regency",
+		"logo": "/images/customers/hayat-regency.png"
+	},
+	{
+		"id": "18",
+		"name": "ecobozor",
+		"logo": "/images/customers/ecobozor.png"
+	},
+	{
+		"id": "19",
+		"name": "Посольство Великобратании",
+		"logo": "/images/customers/british-embassy.jpg"
+	},
+	{
+		"id": "20",
+		"name": "Посольство Индии",
+		"logo": "/images/customers/indian-embassy.jpg"
+	}
+]

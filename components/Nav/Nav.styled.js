@@ -61,19 +61,21 @@ const StyledNav = styled.nav`
 			flex-direction: column;
 			width: 100%;
 			max-width: 45rem;
-			height: auto;
 			position: fixed;
 			top: 0;
 			left: -100%;
 			background: rgba(255, 255, 255, 255.95);
 			height: 100vh;
+			overflow: hidden;
 			align-items: center;
 			justify-content: center;
 			box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
 			transition: 500ms ease;
+			opacity: 0;
 
 			&.mobile {
 				left: 0;
+				opacity: 1;
 			}
 		}
 
