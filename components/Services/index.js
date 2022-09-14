@@ -9,7 +9,7 @@ import Service from "./Service";
 import Dots from "../Dots";
 
 const Services = () => (
-	<StyledServices>
+	<StyledServices name="page-services">
 		<Container>
 			<Content>
 				<AntsTitle

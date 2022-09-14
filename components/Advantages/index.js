@@ -9,7 +9,7 @@ import Dots from "../Dots";
 
 const Advantages = () => {
 	return (
-		<StyledAdvantages>
+		<StyledAdvantages name="page-advantages">
 			<Container>
 				<Content>
 					<AntsTitle

@@ -15,7 +15,7 @@ import Dots from "../Dots";
 
 const About = ({ highlights }) => {
 	return (
-		<StyledAbout>
+		<StyledAbout name="page-about">
 			<Container>
 				<Content>
 					<Main>

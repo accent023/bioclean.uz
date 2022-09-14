@@ -12,7 +12,7 @@ import ArrowDown from "../Icons/ArrowDown";
 
 const Banner = () => {
 	return (
-		<StyledBanner>
+		<StyledBanner name="page-banner">
 			<Container>
 				<Content>
 					<Main>

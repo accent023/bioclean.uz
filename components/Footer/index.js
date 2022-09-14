@@ -16,7 +16,7 @@ import { MdMarkEmailRead } from "react-icons/md";
 
 const Footer = () => {
 	return (
-		<StyledFooter>
+		<StyledFooter name="page-footer">
 			<Container>
 				<Content>
 					<Logo href="/">

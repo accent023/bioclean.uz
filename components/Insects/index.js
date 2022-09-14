@@ -1,4 +1,5 @@
 import StyledInsects, { Content, ListOfInsects } from "./Insects.styled";
+import { v4 as uuidv4 } from "uuid";
 import Container from "../Container";
 import AntsTitle from "../AntsTitle";
 import Insect from "./Insect";
@@ -13,6 +14,7 @@ import {
 
 const InsectsList = [
 	{
+		id: uuidv4(),
 		title: "Тараканов",
 		description:
 			"Тараканы опасны тем, что являются переносчиками многих заболеваний: дизентерии, гастроэнтерита, ряда урогенитальных инфекций, сальмонеллеза, менингита, пневмонии.",
@@ -20,6 +22,7 @@ const InsectsList = [
 		type: "cockroach",
 	},
 	{
+		id: uuidv4(),
 		title: "Клопов",
 		description:
 			"Ученые доказали, что клопы являются переносчиками различных инфекций, включая туберкулез, бруцеллез, гепатит, оспу, туляремию и сибирскую язву. Эти болезни опасны и нередко имеют летальный исход.",
@@ -27,6 +30,7 @@ const InsectsList = [
 		type: "bedbug",
 	},
 	{
+		id: uuidv4(),
 		title: "Комаров",
 		description:
 			"Комар — символ назойливости. Видеть его во сне — к пустым хлопотам и встрече с неприятными людьми. А вот столкновение с настоящими комарами, наяву, может грозить разными реальными неприятными последствиями.",
@@ -34,6 +38,7 @@ const InsectsList = [
 		type: "mosquito",
 	},
 	{
+		id: uuidv4(),
 		title: "Грызунов",
 		description:
 			"От грызунов могут передаваться человеку такие заболевания, как чума, геморрагическая лихорадка с почечным синдромом, клещевой энцефалит, псевдотуберкулез, листериоз, токсоплазмоз, трихинеллез и др.",
@@ -41,6 +46,7 @@ const InsectsList = [
 		type: "rat",
 	},
 	{
+		id: uuidv4(),
 		title: "Скорпионов",
 		description:
 			"Яд скорпионов содержит сильные нейротоксины и оказывает токсическое действие на центральную нервную и сердечно-сосудистую системы. Яд накапливается в «хвосте» скорпиона, а именно в грушевидном членике (тельсоне), оканчивающемся загнутой вверх иглой.",
@@ -48,6 +54,7 @@ const InsectsList = [
 		type: "scorpion",
 	},
 	{
+		id: uuidv4(),
 		title: "Муравьев",
 		description:
 			"Опасны муравьи и для нежной рассады. Они способны подгрызать корни, листья и стебли, уничтожая сеянцы. Муравьи приводят к распространению по участку сорняков. Перетаскивая и поедая некоторые семена, они разносят посевной материал на большие площади.",
@@ -58,7 +65,7 @@ const InsectsList = [
 
 const Insects = () => {
 	return (
-		<StyledInsects>
+		<StyledInsects name="page-insects">
 			<Container>
 				<Content>
 					<AntsTitle
@@ -69,7 +76,7 @@ const Insects = () => {
 
 					<ListOfInsects>
 						{InsectsList.map((insect, index) => (
-							<Insect key={index} {...insect} />
+							<Insect key={insect.id} {...insect} />
 						))}
 					</ListOfInsects>
 				</Content>

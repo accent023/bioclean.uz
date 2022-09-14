@@ -22,6 +22,7 @@ const StyledNav = styled.nav`
 		transition: 500ms ease-in-out;
 		padding: 0.5em 0;
 		position: relative;
+		cursor: pointer;
 
 		&:hover {
 			color: ${({ theme }) => theme.colors.accent};
