@@ -6,7 +6,7 @@ import TargetSniper from "../Icons/TargetSniper";
 const Insect = ({ title, description, image, target, type }) => {
 	return (
 		<StyledInsect>
-			<a href="https://google.com">
+			<a href="https://t.me/Biocleann">
 				Уничт
 				<Target />
 				жить

@@ -61,13 +61,13 @@ const Footer = () => {
 						</a>
 					</SocialNetworks>
 
-					<a className="phoneNumber" href="tel:+998977572010">
+					<a className="phoneNumber" href="tel:+998998212010">
 						<BsPhoneVibrate />
-						(97) 757-20-10
+						(99) 821-20-10
 					</a>
-					<a className="phoneNumber" href="tel:+998977572020">
+					<a className="phoneNumber" href="tel:+998977572010">
 						<GiRotaryPhone />
-						(97) 757-20-20
+						(97) 757-20-10
 					</a>
 					<a className="email" href="mailto:info@bioclean.uz">
 						<MdMarkEmailRead />
