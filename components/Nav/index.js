@@ -17,6 +17,7 @@ const Nav = () => {
 						to="page-banner"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						Главная
 					</Link>
@@ -27,6 +28,7 @@ const Nav = () => {
 						to="page-about"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						О нас
 					</Link>
@@ -37,6 +39,7 @@ const Nav = () => {
 						to="page-services"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						Услуги
 					</Link>
@@ -47,6 +50,7 @@ const Nav = () => {
 						to="page-insects"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						Вредители
 					</Link>
@@ -57,6 +61,7 @@ const Nav = () => {
 						to="page-advantages"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						Преимущества
 					</Link>
@@ -67,6 +72,7 @@ const Nav = () => {
 						to="page-footer"
 						smooth={true}
 						spy={true}
+						duration={100}
 					>
 						Контакты
 					</Link>

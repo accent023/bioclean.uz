@@ -50,17 +50,25 @@ export const Main = styled.div`
 		margin-bottom: 3em;
 	}
 
-	button {
+	[role="button"] {
 		padding: 1em 3em;
 		background: ${({ theme }) => theme.colors.accent};
 		color: #fff;
 		display: flex;
 		align-items: center;
 		gap: 0.5em;
+		text-decoration: none;
+		width: fit-content;
+		border-radius: 3px;
+		transition: 500ms ease-in-out;
 
 		svg {
 			font-size: 2.5rem;
 			transform: translateY(3px);
+		}
+
+		&:hover {
+			opacity: 0.75;
 		}
 	}
 

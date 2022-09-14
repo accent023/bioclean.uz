@@ -7,10 +7,12 @@ import StyledFooter, {
 } from "./Footer.styled";
 import Container from "../Container";
 import Image from "next/image";
-import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import { BsTelegram } from "react-icons/bs";
-import { BsPhoneVibrate } from "react-icons/bs";
+import {
+	BsInstagram,
+	BsFacebook,
+	BsTelegram,
+	BsPhoneVibrate,
+} from "react-icons/bs";
 import { GiRotaryPhone } from "react-icons/gi";
 import { MdMarkEmailRead } from "react-icons/md";
 

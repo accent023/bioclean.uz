@@ -45,10 +45,15 @@ const About = ({ highlights }) => {
 							))}
 						</Highlights>
 
-						<button>
+						<a
+							target="_blank"
+							rel="noreferrer"
+							role="button"
+							href="https://t.me/biocleann"
+						>
 							Оставить заявку
 							<MdOutlineUnsubscribe />
-						</button>
+						</a>
 					</Main>
 
 					<ImagePart>

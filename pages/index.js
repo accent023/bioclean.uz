@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import dynamic from "next/dynamic";
 
 // Lazy
@@ -15,7 +14,7 @@ const Preparation = dynamic(() => import("../components/Preparation"));
 const Footer = dynamic(() => import("../components/Footer"));
 
 const HomePage = () => (
-	<Suspense fallback={"Loading"}>
+	<>
 		<Header />
 		<Banner />
 		<About
@@ -34,7 +33,7 @@ const HomePage = () => (
 		<Preparation />
 		<Documents />
 		<Footer />
-	</Suspense>
+	</>
 );
 
 export default HomePage;
