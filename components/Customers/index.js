@@ -45,8 +45,13 @@ const Customers = ({ customers }) => {
 							}}
 							slidesPerView={1}
 							spaceBetween={100}
-							modules={[Navigation]}
-							speed={900}
+							loop={true}
+							modules={[Navigation, Autoplay]}
+							speed={500}
+							autoplay={{
+								delay: 2000,
+								disableOnInteraction: false,
+							}}
 							breakpoints={{
 								640: {
 									slidesPerView: 2,
