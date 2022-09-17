@@ -24,8 +24,7 @@ const StyledNav = styled.nav`
 		position: relative;
 		cursor: pointer;
 
-		&:hover,
-		&.active {
+		&:hover {
 			color: ${({ theme }) => theme.colors.accent};
 
 			&::after {
