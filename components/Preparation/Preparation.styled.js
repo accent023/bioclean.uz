@@ -33,6 +33,7 @@ export const List = styled.ul`
 		svg {
 			font-size: 2.5rem;
 			width: 5%;
+			fill: ${({ theme }) => theme.colors.accent};
 		}
 
 		p {

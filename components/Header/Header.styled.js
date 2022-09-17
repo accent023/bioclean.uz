@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { FadeIn } from "../../Animations.styled";
 
 const StyledHeader = styled.header`
-	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -10,6 +9,12 @@ const StyledHeader = styled.header`
 	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	animation: ${FadeIn} 1s 2s forwards;
+	background: ${({ sticky }) => (sticky ? "#fff" : "rgba(0, 0, 0, 0.5)")};
+	position: ${({ sticky }) => (sticky ? "fixed" : "absolute")};
+	color: ${({ sticky }) => (sticky ? "#333" : "#fff")};
+	box-shadow: ${({ sticky }) =>
+		sticky ? "0 3px 3px -3px rgba(0, 0, 0, .25)" : "none"};
+	transition: background 500ms;
 
 	// RWD
 	@media (max-width: 992px) {
@@ -24,7 +29,7 @@ export const Content = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: ${({ theme }) => theme.colors.white};
+	color: currentcolor;
 
 	@media (max-width: 992px) {
 		padding: 0.3rem 0;

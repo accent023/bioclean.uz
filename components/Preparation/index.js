@@ -1,7 +1,7 @@
 import StyledPreparation, { Content, List } from "./Preparation.styled";
 import Container from "../Container";
 import AntsTitle from "../AntsTitle";
-import { BsCheck2All } from "react-icons/bs";
+import { MdOutlineGppGood } from "react-icons/md";
 
 const Preparation = () => {
 	return (
@@ -16,11 +16,11 @@ const Preparation = () => {
 
 					<List>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>Закрыть окна, двери, и вентиляционные ходы.</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Покинуть помещение на 3-6 часов (в зависимости от типа
 								препарата).{" "}
@@ -31,14 +31,14 @@ const Preparation = () => {
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Если обработка проводилась вечером, лучше переночевать в
 								другом месте.
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Открыть окна и обеспечить приток воздуха в помещение.
 								Сделать сквозняк.{" "}
@@ -48,7 +48,7 @@ const Preparation = () => {
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Твёрдые поверхности, c которымми вынуждены соприкасаться
 								люди и домашние питомцы, надо обработать водным
@@ -57,7 +57,7 @@ const Preparation = () => {
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Влажная уборка возможна только через неделю. В течение 7
 								дней единичные насекомые, которые сразу ен погибли,
@@ -66,7 +66,7 @@ const Preparation = () => {
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Генеральная уборка с тщательным вымыванием плинтусов
 								через 20 дней.{" "}
@@ -77,7 +77,7 @@ const Preparation = () => {
 							</p>
 						</li>
 						<li>
-							<BsCheck2All />
+							<MdOutlineGppGood />
 							<p>
 								Если вы сомневаетесь, что делать после дезинфекции
 								можно, а что - нельзя, лучше позвонить специалистам.

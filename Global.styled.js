@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
 		color: #555;
 		-webkit-tap-highlight-color: transparent;
 
+		&.hidden {
+			overflow: hidden;
+		}
+
 		@media (max-width: 768px) {
 			font-size: 1.6rem;
 		}

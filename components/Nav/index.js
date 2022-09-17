@@ -1,10 +1,20 @@
 import StyledNav from "./Nav.styled";
 import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
 	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const body = document.body;
+
+		if (isMobile) {
+			return body.classList.add("hidden");
+		}
+
+		body.removeAttribute("class");
+	}, [isMobile]);
 
 	return (
 		<StyledNav>
@@ -13,66 +23,66 @@ const Nav = () => {
 			<ul className={isMobile ? "mobile" : " "}>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-banner"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						Главная
 					</Link>
 				</li>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-about"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						О нас
 					</Link>
 				</li>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-services"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						Услуги
 					</Link>
 				</li>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-insects"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						Вредители
 					</Link>
 				</li>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-advantages"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						Преимущества
 					</Link>
 				</li>
 				<li>
 					<Link
-						onClick={() => setIsMobile(false)}
 						to="page-footer"
 						smooth={true}
 						spy={true}
-						duration={100}
+						duration={700}
+						onClick={() => setIsMobile(false)}
 					>
 						Контакты
 					</Link>
