@@ -80,6 +80,95 @@ const GlobalStyle = createGlobalStyle`
 		max-width: 1300px;
 		margin: 0 auto;
 	}
+
+	// Phone component styles
+	.phone-call {
+	    width: 50px;
+	    height: 50px;
+	    right: 20px;
+	    bottom: 20px;
+	    background: #10b418;
+	    position: fixed;
+	    text-align: center;
+	    color: #ffffff;
+	    cursor: pointer;
+	    border-radius: 50%;
+	    z-index: 99;
+	    display: none;
+	    line-height: 65px;
+
+	    @media (max-width: 992px) {
+	    	display: inline-block;
+	    	display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    }
+	}
+
+	.phone-call:before {
+	    position: absolute;
+	    content: " ";
+	    z-index: -1;
+	    top: -15px;
+	    left: -15px;
+	    background-color: seagreen;
+	    width: 80px;
+	    height: 80px;
+	    border-radius: 100%;
+	    animation-fill-mode: both;
+	    -webkit-animation-fill-mode: both;
+	    opacity: 0.6;
+	    -webkit-animation: pulse 1s ease-out;
+	    animation: pulse 1.8s ease-out;
+	    -webkit-animation-iteration-count: infinite;
+	    animation-iteration-count: infinite;
+	}
+
+	@-webkit-keyframes pulse {
+	    0% {
+	        -webkit-transform: scale(0);
+	        opacity: 0;
+	    }
+	    25% {
+	        -webkit-transform: scale(0.3);
+	        opacity: 1;
+	    }
+	    50% {
+	        -webkit-transform: scale(0.6);
+	        opacity: 0.6;
+	    }
+	    75% {
+	        -webkit-transform: scale(0.9);
+	        opacity: 0.3;
+	    }
+	    100% {
+	        -webkit-transform: scale(1);
+	        opacity: 0;
+	    }
+	}
+
+	@keyframes pulse {
+	    0% {
+	        transform: scale(0);
+	        opacity: 0;
+	    }
+	    25% {
+	        transform: scale(0.3);
+	        opacity: 1;
+	    }
+	    50% {
+	        transform: scale(0.6);
+	        opacity: 0.6;
+	    }
+	    75% {
+	        transform: scale(0.9);
+	        opacity: 0.3;
+	    }
+	    100% {
+	        transform: scale(1);
+	        opacity: 0;
+	    }
+	}
 `;
 
 export default GlobalStyle;

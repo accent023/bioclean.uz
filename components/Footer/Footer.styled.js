@@ -3,16 +3,20 @@ import styled from "styled-components";
 const StyledFooter = styled.footer``;
 
 export const Content = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 	border-top: 1px solid #eee;
 	padding: 3em 0;
-	text-align: center;
 	width: 100%;
-	max-width: 75rem;
 	font-size: 1.5rem;
 	margin: 0 auto;
 
 	p {
-		line-height: 1.45;
+		font-size: 1.75rem;
+		line-height: 1.5;
+		max-width: 45ch;
 	}
 
 	a {
@@ -34,7 +38,7 @@ export const Content = styled.div`
 
 	.phoneNumber {
 		display: block;
-		margin-bottom: 0.25em;
+		margin-bottom: 1em;
 	}
 
 	.email {
@@ -49,9 +53,30 @@ export const Content = styled.div`
 	}
 `;
 
+export const Col = styled.div`
+	width: 47.5%;
+
+	&:nth-of-type(2) {
+		iframe {
+			width: 100%;
+			min-height: 400px;
+			border: none;
+		}
+	}
+
+	@media (max-width: 992px) {
+		width: 100%;
+
+		&:nth-of-type(2) {
+			margin-top: 3rem;
+		}
+	}
+`;
+
 export const Logo = styled.a`
 	display: inline-block;
 	width: 30rem;
+	transform: translateX(-5rem);
 	margin-bottom: 1em;
 	cursor: pointer;
 `;

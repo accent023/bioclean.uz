@@ -18,6 +18,9 @@ import ArrowLeft from "../Icons/ArrowLeft";
 import ArrowRight from "../Icons/ArrowRight";
 import CustomersData from "../../database/customers";
 
+const customLoader = () =>
+	"https://thumbs.dreamstime.com/b/no-image-available-icon-vector-illustration-flat-design-140476186.jpg";
+
 const Customers = ({ customers }) => {
 	const customersArrowPrev = useRef(null);
 	const customersArrowNext = useRef(null);
