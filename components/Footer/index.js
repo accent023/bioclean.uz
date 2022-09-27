@@ -66,13 +66,14 @@ const Footer = () => {
 							</a>
 						</SocialNetworks>
 
-						<a className="phoneNumber" href="tel:+998998212010">
-							<BsPhoneVibrate />
-							(99) 821-20-10
-						</a>
 						<a className="phoneNumber" href="tel:+998977572010">
 							<GiRotaryPhone />
 							(97) 757-20-10
+						</a>
+
+						<a className="phoneNumber" href="tel:+998998212010">
+							<BsPhoneVibrate />
+							(99) 821-20-10
 						</a>
 						<a className="email" href="mailto:info@bioclean.uz">
 							<MdMarkEmailRead />
@@ -99,12 +100,17 @@ const Footer = () => {
 						rel="noreferrer"
 					>
 						Made with ❤️ by{" "}
-						<img src="https://webpark.uz/_next/image?url=%2Fimages%2Fsite%2Flogo.png&w=3840&q=75" />
+						<img
+							src="https://webpark.uz/_next/image?url=%2Fimages%2Fsite%2Flogo.png&w=3840&q=75"
+							alt="Логотип компании webpark.uz"
+						/>
 					</Developer>
 				</Container>
 			</ExtraInfo>
 
-			<Phone />
+			<a href="tel:+998977572010">
+				<Phone />
+			</a>
 		</StyledFooter>
 	);
 };
