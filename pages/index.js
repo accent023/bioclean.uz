@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 // Lazy
 const Header = dynamic(() => import("../components/Header"));
@@ -15,6 +16,9 @@ const Footer = dynamic(() => import("../components/Footer"));
 
 const HomePage = () => (
 	<>
+		<Head>
+			<title>Дезинфекция и дезинсекция в Ташкенте</title>
+		</Head>
 		<Header />
 		<Banner />
 		<About

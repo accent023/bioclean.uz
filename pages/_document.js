@@ -30,8 +30,16 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="ru">
+      <Html lang="ru-RU">
         <Head>
+          <meta
+            name="keywords"
+            content="Bioclean, дезинфекция, дезинфекция в Ташкенте, дезинсекция, Дезинсекция в Ташкенте дератизация, дезодарация, Дезодарация в Ташкенте, уничтожение клопов, уничтожение тараканов, уничтожение комаров, уничтожение вредителей, профессиональная дезинфекция"
+          />
+          <meta
+            name="description"
+            content="Услуги дезинфекции помещений в Ташкенте, дезинсекция от тараканов и клопов. Вызов санитарной службы для обработки квартир и нежилых помещений, круглосуточный сервис дезинфекции, дезинфекции, дератизации и дезодарации."
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
