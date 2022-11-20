@@ -84,7 +84,7 @@ const Footer = () => {
 					<Col>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.229553423384!2d69.33292381555914!3d41.347363979267804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef503523549f3%3A0x7423e2ce0821528e!2z0JTQtdC30LjQvdGE0LXQutGG0LjRjyDQsiDQotCw0YjQutC10L3RgtC1IEJpb0NsZWFuLnV6!5e0!3m2!1sen!2s!4v1664276614227!5m2!1sen!2s"
-							allowFullscreen=""
+							allowFullScreen=""
 							loading="lazy"
 							referrerPolicy="no-referrer-when-downgrade"
 						/>
